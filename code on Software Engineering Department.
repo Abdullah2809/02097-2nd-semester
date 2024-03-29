@@ -1,0 +1,22 @@
+class Department:
+    def __init__(self, name):
+        self.name = name
+        self.employees = []
+
+    def add_employee(self, employee):
+        self.employees.append(employee)
+
+    def remove_employee(self, employee):
+        self.employees.remove(employee)
+
+
+class Employee:
+    def __init__(self, name, position, salary):
+        self.name = name
+        self.position = position
+        self.salary = salary
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Position: {self.position}")
+        print(f"Salary: {self.salary}"
